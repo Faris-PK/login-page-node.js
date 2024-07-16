@@ -1,0 +1,32 @@
+<%-include ('header' )  -%>
+
+<div class="container">
+    <div class="screen">
+        <div class="screen__content">
+            <!-- Dashboard Content -->
+            <div class="dashboard">
+                <h1><b>Welcome to the Dashboard</b></h1>
+                <!-- Add your dashboard elements here -->
+                <!-- Example: -->
+                <div class="dashboard__section">
+                    <h2>User Information:</h2>
+                    <p>Email: <%= locals.user?user:"User" %></p>
+                </div>
+                <!-- Add more sections as needed -->
+                <a href="/route/logout" class="button logout__button">
+                    <span class="button__text">Logout</span>
+                    <i class="button__icon fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+            
+        </div>
+        <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
+        </div>
+    </div>
+</div>
+
+<%-include ('footer')  -%>
